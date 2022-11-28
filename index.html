@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="medved" >
+      <div>
+        <input
+          type="radio"
+          id="contactChoice1"
+          name="contact"
+          value="Итальянская кухня"
+        />
+        <label for="contactChoice1">Итальянская кухня</label>
+
+        <input
+          type="radio"
+          id="contactChoice2"
+          name="contact"
+          value="Грузинская кухня"
+        />
+        <label for="contactChoice2">Грузинская кухня</label>
+
+        <input
+          type="radio"
+          id="contactChoice3"
+          name="contact"
+          value="Русская кухня"
+        />
+        <label for="contactChoice3">Русская кухня</label>
+      </div>
+
+      <div>
+        <div>
+          <input type="radio" id="figure1" name="figure" value="КВАДРАТ" />
+          <label for="figure1" class="figures">КВАДРАТ</label>
+
+          <input
+            type="radio"
+            id="figure2"
+            name="figure"
+            value="ПРЯМОУГОЛЬНИК"
+          />
+          <label for="figure2" class="figures">ПРЯМОУГОЛЬНИК</label>
+
+          <input type="radio" id="figure3" name="figure" value="КРУГ" />
+          <label for="figure3" class="figures">КРУГ</label>
+
+          <input type="radio" id="figure4" name="figure" value="ЭЛИПС" />
+          <label for="figure4" class="figures">ЭЛИПС</label>
+        </div>
+        <div class="img">
+          <div class="valueHW"></div>
+          <img src="img/img.png" class="img-figure open" alt="" />
+          <img src="img/img1.png" class="img-figure kvadrat" alt="" />
+          <img src="img/img3.png" class="img-figure prom" alt="" />
+          <img src="img/img2.png" class="img-figure krug" alt="" />
+          <img src="img/img4.png" class="img-figure elipse" alt="" />
+          <div>
+            <label class="figureHW">
+              150 X 150
+              <input type="radio" name="figureHW" value="150 X 150" />
+            </label>
+            <label class="figureHW">
+              120 X 120
+              <input type="radio" name="figureHW" value="120 X 150" />
+            </label>
+            <label class="figureHW">
+              130 X 130
+              <input type="radio" name="figureHW" value="130 X 150" />
+            </label>
+            <label class="figureHW">
+              140 X 140
+              <input type="radio" name="figureHW" value="140 X 150" />
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="">
+            Без ручки
+            <input type="radio" name="ruchka" value="Без ручки" />
+          </label>
+          <label class="">
+            С ручкой
+            <input type="radio" name="ruchka" value="С ручкой" />
+          </label>
+        </div>
+        <div class="ugl">
+          <label class="">
+            с минимальным, еле заметным закруглением?
+            <input
+              type="radio"
+              name="zakrugl"
+              value=" с минимальным, еле заметным закруглением?"
+            />
+          </label>
+          <label class="figureHW">
+            со средним закруглением?
+            <input
+              type="radio"
+              name="zakrugl"
+              value=" со средним закруглением?"
+            />
+          </label>
+          <label class="figureHW">
+            или прямо вот с хорошим закруглением?
+            <input
+              type="radio"
+              name="zakrugl"
+              value="или прямо вот с хорошим закруглением?"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="full-string"></div>
+      <input type="submit" value="Отправить" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

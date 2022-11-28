@@ -1,0 +1,7 @@
+.img-figure {
+  display: none;
+}
+
+.img-figure.open {
+  display: block;
+}
